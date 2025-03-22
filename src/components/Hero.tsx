@@ -49,14 +49,15 @@ const Hero = () => {
         ref={parallaxRef}
         className="absolute inset-0 bg-black"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
+          backgroundImage: 'url(/lovable-uploads/34cc3d4e-07f7-441a-b1a7-ad87ce0b6939.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           height: '120%',
           top: '-10%',
         }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
+        {/* Stronger overlay for better text contrast */}
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
       {/* Content */}
@@ -65,13 +66,13 @@ const Hero = () => {
         className="relative h-full flex flex-col items-center justify-center text-center px-4 pt-16"
       >
         <div className="w-full max-w-5xl mx-auto">
-          <span className="inline-block reveal-on-scroll px-3 py-1 mb-6 text-xs font-medium tracking-wider uppercase rounded-full bg-white/10 text-white/90 backdrop-blur-sm border border-white/20">
+          <span className="inline-block reveal-on-scroll px-3 py-1 mb-6 text-xs font-medium tracking-wider uppercase rounded-full bg-white/20 text-white backdrop-blur-sm border border-white/30">
             Excavation & Grading Specialists
           </span>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl reveal-on-scroll font-bold text-white mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl reveal-on-scroll font-bold text-white mb-6 tracking-tight drop-shadow-lg">
             Building Strong Foundations<br /> For Utah Since 1997
           </h1>
-          <p className="text-lg md:text-xl reveal-on-scroll text-white/80 max-w-2xl mx-auto mb-10">
+          <p className="text-lg md:text-xl reveal-on-scroll text-white max-w-2xl mx-auto mb-10 drop-shadow-md">
             Professional excavation, grading, utilities, and concrete services 
             for residential and commercial projects throughout the Wasatch Front.
           </p>
@@ -84,7 +85,7 @@ const Hero = () => {
             </a>
             <a 
               href="#services" 
-              className="px-8 py-3 rounded-md font-medium bg-white/10 backdrop-blur-sm text-white border border-white/20 hover:bg-white/20 transition-all w-full sm:w-auto"
+              className="px-8 py-3 rounded-md font-medium bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white/30 transition-all w-full sm:w-auto"
             >
               Our Services
             </a>
