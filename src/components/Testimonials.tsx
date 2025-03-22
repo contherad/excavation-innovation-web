@@ -14,7 +14,7 @@ const testimonials = [
     name: 'Sarah Johnson',
     role: 'Project Manager',
     company: 'Johnson Construction',
-    quote: 'We've worked with Rock Structures on multiple commercial projects. Their precision grading and excavation work is exceptional, and their team is always professional and reliable.',
+    quote: "We've worked with Rock Structures on multiple commercial projects. Their precision grading and excavation work is exceptional, and their team is always professional and reliable.",
     rating: 5,
   },
   {
