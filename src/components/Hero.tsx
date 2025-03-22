@@ -71,7 +71,6 @@ const Hero = () => {
             loop 
             playsInline
             className="absolute min-w-full min-h-full object-cover"
-            poster="/lovable-uploads/a3da463f-4c2c-408d-802d-86fbcc858868.png"
           >
             <source src="https://player.vimeo.com/external/517090081.hd.mp4?s=80e097f68be548f70c9c3d5ad3381995b7767e31&profile_id=175" type="video/mp4" />
             Your browser does not support the video tag.

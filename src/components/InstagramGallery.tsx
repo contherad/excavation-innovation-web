@@ -95,8 +95,8 @@ const InstagramGallery = () => {
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Instagram className="h-5 w-5 text-rock-brown" />
-            <span className="px-3 py-1 text-xs font-medium tracking-wider uppercase rounded-full bg-rock-brown/10 text-rock-brown">
+            <Instagram className="h-5 w-5 text-rock-red" />
+            <span className="px-3 py-1 text-xs font-medium tracking-wider uppercase rounded-full bg-rock-red/10 text-rock-red">
               @rockstructures
             </span>
           </div>

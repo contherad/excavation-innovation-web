@@ -58,12 +58,12 @@ const Services = () => {
   return (
     <section id="services" className="py-24 bg-rock-light-gray relative overflow-hidden">
       {/* Background Element */}
-      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-rock-brown/5 rounded-bl-full -z-10"></div>
-      <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-rock-brown/5 rounded-tr-full -z-10"></div>
+      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-rock-red/5 rounded-bl-full -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-rock-red/5 rounded-tr-full -z-10"></div>
       
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
-          <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider uppercase rounded-full bg-rock-brown/10 text-rock-brown">
+          <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider uppercase rounded-full bg-rock-red/10 text-rock-red">
             Our Expertise
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-rock-dark">
@@ -83,7 +83,7 @@ const Services = () => {
               className="bg-white rounded-lg p-8 shadow-subtle transition-all duration-300 hover:shadow-elevation reveal-on-scroll"
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <div className="text-rock-brown mb-5">{service.icon}</div>
+              <div className="text-rock-red mb-5">{service.icon}</div>
               <h3 className="text-xl font-semibold mb-3 text-rock-dark">{service.title}</h3>
               <p className="text-rock-gray">{service.description}</p>
             </div>
@@ -93,7 +93,7 @@ const Services = () => {
         <div className="mt-16 text-center reveal-on-scroll">
           <a 
             href="#contact" 
-            className="inline-block px-6 py-3 bg-rock-brown text-white rounded-md font-medium transition-all button-hover"
+            className="inline-block px-6 py-3 bg-rock-red text-white rounded-md font-medium transition-all button-hover"
           >
             Discuss Your Project
           </a>

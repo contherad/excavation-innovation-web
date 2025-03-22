@@ -87,7 +87,7 @@
   }
 
   ::selection {
-    @apply bg-rock-brown/20 text-rock-dark;
+    @apply bg-rock-red/20 text-rock-dark;
   }
 }
 

@@ -71,7 +71,7 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 bg-white rounded-lg shadow-elevation overflow-hidden reveal-on-scroll">
             {/* Contact Info */}
-            <div className="lg:col-span-2 bg-rock-brown text-white p-8 md:p-12">
+            <div className="lg:col-span-2 bg-rock-red text-white p-8 md:p-12">
               <h2 className="text-2xl md:text-3xl font-bold mb-6">Get In Touch</h2>
               <p className="mb-8 text-white/80">
                 Ready to start your next project? Contact us for a consultation 
@@ -139,7 +139,7 @@ const Contact = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-md bg-rock-light-gray border-0 focus:ring-2 focus:ring-rock-brown/50 transition-all"
+                      className="w-full px-4 py-3 rounded-md bg-rock-light-gray border-0 focus:ring-2 focus:ring-rock-red/50 transition-all"
                       placeholder="Your name"
                       required
                     />
@@ -155,7 +155,7 @@ const Contact = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-md bg-rock-light-gray border-0 focus:ring-2 focus:ring-rock-brown/50 transition-all"
+                      className="w-full px-4 py-3 rounded-md bg-rock-light-gray border-0 focus:ring-2 focus:ring-rock-red/50 transition-all"
                       placeholder="Your email"
                       required
                     />
@@ -173,7 +173,7 @@ const Contact = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-md bg-rock-light-gray border-0 focus:ring-2 focus:ring-rock-brown/50 transition-all"
+                      className="w-full px-4 py-3 rounded-md bg-rock-light-gray border-0 focus:ring-2 focus:ring-rock-red/50 transition-all"
                       placeholder="Your phone number"
                     />
                   </div>
@@ -187,7 +187,7 @@ const Contact = () => {
                       name="projectType"
                       value={formData.projectType}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-md bg-rock-light-gray border-0 focus:ring-2 focus:ring-rock-brown/50 transition-all"
+                      className="w-full px-4 py-3 rounded-md bg-rock-light-gray border-0 focus:ring-2 focus:ring-rock-red/50 transition-all"
                       required
                     >
                       <option value="" disabled>Select project type</option>
@@ -209,7 +209,7 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows={5}
-                    className="w-full px-4 py-3 rounded-md bg-rock-light-gray border-0 focus:ring-2 focus:ring-rock-brown/50 transition-all"
+                    className="w-full px-4 py-3 rounded-md bg-rock-light-gray border-0 focus:ring-2 focus:ring-rock-red/50 transition-all"
                     placeholder="Tell us about your project"
                     required
                   ></textarea>
@@ -218,7 +218,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full px-6 py-3 bg-rock-brown text-white rounded-md font-medium flex items-center justify-center transition-all button-hover"
+                  className="w-full px-6 py-3 bg-rock-red text-white rounded-md font-medium flex items-center justify-center transition-all button-hover"
                 >
                   {isSubmitting ? (
                     <div className="animate-spin h-5 w-5 border-2 border-white border-t-transparent rounded-full mr-2"></div>

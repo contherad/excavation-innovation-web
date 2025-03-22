@@ -16,21 +16,21 @@ const Footer = () => {
               <a 
                 href="#" 
                 aria-label="Facebook"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-rock-brown transition-colors"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-rock-red transition-colors"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a 
                 href="#" 
                 aria-label="Instagram"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-rock-brown transition-colors"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-rock-red transition-colors"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a 
                 href="#" 
                 aria-label="LinkedIn"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-rock-brown transition-colors"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-rock-red transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
@@ -83,19 +83,19 @@ const Footer = () => {
             <h4 className="text-lg font-medium mb-6">Contact Info</h4>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <Phone className="h-5 w-5 mt-0.5 mr-3 text-rock-brown" />
+                <Phone className="h-5 w-5 mt-0.5 mr-3 text-rock-red" />
                 <a href="tel:+18015470844" className="text-white/70 hover:text-white transition-colors">
                   (801) 547-0844
                 </a>
               </li>
               <li className="flex items-start">
-                <Mail className="h-5 w-5 mt-0.5 mr-3 text-rock-brown" />
+                <Mail className="h-5 w-5 mt-0.5 mr-3 text-rock-red" />
                 <a href="mailto:info@rockstructures.com" className="text-white/70 hover:text-white transition-colors">
                   info@rockstructures.com
                 </a>
               </li>
               <li className="flex items-start">
-                <MapPin className="h-5 w-5 mt-0.5 mr-3 text-rock-brown" />
+                <MapPin className="h-5 w-5 mt-0.5 mr-3 text-rock-red" />
                 <span className="text-white/70">
                   Kaysville, Utah<br />
                   Serving the entire Wasatch Front

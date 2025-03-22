@@ -33,7 +33,7 @@ const TestimonialCard = ({ testimonial, index }: { testimonial: typeof testimoni
       style={{ transitionDelay: `${index * 100}ms` }}
     >
       <div className="flex-1">
-        <div className="text-rock-brown/20 mb-4">
+        <div className="text-rock-red/20 mb-4">
           <Quote className="h-10 w-10" />
         </div>
         <p className="text-rock-gray mb-6 italic">"{testimonial.quote}"</p>
@@ -83,12 +83,12 @@ const Testimonials = () => {
   return (
     <section id="about" className="py-24 bg-rock-light-gray relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute top-1/2 right-0 w-64 h-64 bg-rock-brown/5 rounded-full transform -translate-y-1/2 -z-10"></div>
-      <div className="absolute bottom-0 left-1/4 w-32 h-32 bg-rock-brown/5 rounded-full -z-10"></div>
+      <div className="absolute top-1/2 right-0 w-64 h-64 bg-rock-red/5 rounded-full transform -translate-y-1/2 -z-10"></div>
+      <div className="absolute bottom-0 left-1/4 w-32 h-32 bg-rock-red/5 rounded-full -z-10"></div>
 
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
-          <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider uppercase rounded-full bg-rock-brown/10 text-rock-brown">
+          <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider uppercase rounded-full bg-rock-red/10 text-rock-red">
             Our Reputation
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-rock-dark">
@@ -109,7 +109,7 @@ const Testimonials = () => {
         <div className="mt-20 bg-white rounded-lg shadow-subtle reveal-on-scroll p-8 md:p-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider uppercase rounded-full bg-rock-brown/10 text-rock-brown">
+              <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider uppercase rounded-full bg-rock-red/10 text-rock-red">
                 About Us
               </span>
               <h3 className="text-2xl md:text-3xl font-bold mb-4 text-rock-dark">
@@ -122,19 +122,19 @@ const Testimonials = () => {
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-center">
-                  <div className="w-2 h-2 rounded-full bg-rock-brown mr-2"></div>
+                  <div className="w-2 h-2 rounded-full bg-rock-red mr-2"></div>
                   <span className="text-rock-gray">Licensed and insured contractors</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 rounded-full bg-rock-brown mr-2"></div>
+                  <div className="w-2 h-2 rounded-full bg-rock-red mr-2"></div>
                   <span className="text-rock-gray">Modern equipment fleet</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 rounded-full bg-rock-brown mr-2"></div>
+                  <div className="w-2 h-2 rounded-full bg-rock-red mr-2"></div>
                   <span className="text-rock-gray">Experienced, professional crews</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 rounded-full bg-rock-brown mr-2"></div>
+                  <div className="w-2 h-2 rounded-full bg-rock-red mr-2"></div>
                   <span className="text-rock-gray">Commitment to safety and quality</span>
                 </li>
               </ul>

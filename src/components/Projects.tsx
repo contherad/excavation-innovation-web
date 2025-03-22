@@ -91,7 +91,7 @@ const Projects = () => {
     <section id="projects" className="py-24 bg-white">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
-          <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider uppercase rounded-full bg-rock-brown/10 text-rock-brown">
+          <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider uppercase rounded-full bg-rock-red/10 text-rock-red">
             Our Work
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-rock-dark">
@@ -110,7 +110,7 @@ const Projects = () => {
               onClick={() => setActiveCategory(category)}
               className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
                 activeCategory === category
-                  ? 'bg-rock-brown text-white'
+                  ? 'bg-rock-red text-white'
                   : 'bg-rock-light-gray text-rock-gray hover:bg-rock-light-brown/20'
               }`}
             >
@@ -128,7 +128,7 @@ const Projects = () => {
         <div className="mt-16 text-center reveal-on-scroll">
           <a 
             href="#contact" 
-            className="inline-block px-6 py-3 bg-transparent border border-rock-brown text-rock-brown hover:bg-rock-brown hover:text-white rounded-md font-medium transition-all"
+            className="inline-block px-6 py-3 bg-transparent border border-rock-red text-rock-red hover:bg-rock-red hover:text-white rounded-md font-medium transition-all"
           >
             Discuss Your Project
           </a>

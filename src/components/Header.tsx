@@ -32,7 +32,8 @@ const Header = () => {
           className="flex items-center space-x-2 transition-opacity hover:opacity-80"
         >
           <span className="text-2xl font-bold font-display tracking-tight text-rock-dark">
-            Rock Structures
+            <img src="/lovable-uploads/rockstructureslogo.png" alt="Rock Structures Logo" className="w-150 h-50" />
+            {/* Rock Structures */}
           </span>
         </Link>
 
@@ -44,7 +45,7 @@ const Header = () => {
               href={`#${item.toLowerCase()}`}
               className={cn(
                 'text-sm font-medium transition-all duration-200',
-                isScrolled ? 'text-rock-dark hover:text-rock-brown' : 'text-rock-dark hover:text-rock-brown'
+                isScrolled ? 'text-rock-dark hover:text-rock-red' : 'text-rock-light-gray hover:text-rock-red'
               )}
             >
               {item}
@@ -54,7 +55,7 @@ const Header = () => {
             href="tel:+18015470844" 
             className={cn(
               'px-5 py-2 rounded-md text-sm font-medium transition-all duration-300 button-hover',
-              isScrolled ? 'bg-rock-brown text-white' : 'bg-rock-brown text-white'
+              isScrolled ? 'bg-rock-red text-white' : 'bg-rock-red text-white'
             )}
           >
             (801) 547-0844
@@ -90,7 +91,7 @@ const Header = () => {
             ))}
             <a 
               href="tel:+18015470844" 
-              className="mt-4 w-full text-center px-5 py-3 rounded-md font-medium bg-rock-brown text-white button-hover"
+              className="mt-4 w-full text-center px-5 py-3 rounded-md font-medium bg-rock-red text-white button-hover"
             >
               Call (801) 547-0844
             </a>
