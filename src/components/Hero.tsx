@@ -90,7 +90,7 @@ const Hero = () => {
         className={`absolute inset-0 bg-black z-10 transition-opacity duration-1000 pointer-events-none ${isLoaded ? 'opacity-0' : 'opacity-100'}`}
       >
         <div className="flex items-center justify-center h-full">
-          <Loader2 className="animate-spin h-10 w-10 text-rock-brown" />
+          <Loader2 className="animate-spin h-10 w-10 text-red-600" />
         </div>
       </div>
 
@@ -114,7 +114,7 @@ const Hero = () => {
               textShadow: "0 4px 12px rgba(0,0,0,0.5)"
             }}
           >
-            Building Strong <span className="text-rock-brown">Foundations</span><br /> 
+            Building Strong <span className="text-red-600">Foundations</span><br /> 
             For Utah Since 1997
           </h1>
           
@@ -135,7 +135,7 @@ const Hero = () => {
           >
             <a 
               href="#contact" 
-              className="relative overflow-hidden group rounded-md px-8 py-4 font-medium bg-rock-brown text-white transition-all duration-300 hover:bg-rock-brown/90 hover:shadow-lg hover:shadow-rock-brown/20 w-full sm:w-auto"
+              className="relative overflow-hidden group rounded-md px-8 py-4 font-medium bg-red-600 text-white transition-all duration-300 hover:bg-red-700 hover:shadow-lg hover:shadow-red-600/20 w-full sm:w-auto"
             >
               <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full group-hover:animate-[shine_1.5s_ease]"></span>
               Request a Quote
@@ -155,15 +155,15 @@ const Hero = () => {
             style={{ transitionDelay: "1000ms" }}
           >
             <div className="bg-black/30 backdrop-blur-md border border-white/10 rounded-lg p-4 text-center">
-              <div className="text-3xl md:text-4xl font-bold text-rock-brown">25+</div>
+              <div className="text-3xl md:text-4xl font-bold text-red-600">25+</div>
               <div className="text-white/80 text-sm mt-1">Years Experience</div>
             </div>
             <div className="bg-black/30 backdrop-blur-md border border-white/10 rounded-lg p-4 text-center">
-              <div className="text-3xl md:text-4xl font-bold text-rock-brown">500+</div>
+              <div className="text-3xl md:text-4xl font-bold text-red-600">500+</div>
               <div className="text-white/80 text-sm mt-1">Projects Completed</div>
             </div>
             <div className="col-span-2 md:col-span-1 bg-black/30 backdrop-blur-md border border-white/10 rounded-lg p-4 text-center">
-              <div className="text-3xl md:text-4xl font-bold text-rock-brown">100%</div>
+              <div className="text-3xl md:text-4xl font-bold text-red-600">100%</div>
               <div className="text-white/80 text-sm mt-1">Client Satisfaction</div>
             </div>
           </div>

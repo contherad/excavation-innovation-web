@@ -74,6 +74,7 @@ export default {
 					'gray': '#6E7275',
 					'light-gray': '#F5F5F5',
 					'dark': '#333333',
+					'red': '#ea384c',
 				}
 			},
 			borderRadius: {
