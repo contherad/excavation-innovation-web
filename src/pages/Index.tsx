@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
@@ -10,6 +10,17 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
 const Index = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate initial loading
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+    
+    return () => clearTimeout(timer);
+  }, []);
+
   useEffect(() => {
     // Scroll reveal functionality
     const handleScrollReveal = () => {
@@ -38,8 +49,21 @@ const Index = () => {
     };
   }, []);
 
+  // Prevent scrolling during loading
+  useEffect(() => {
+    if (isLoading) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isLoading]);
+
   return (
-    <div className="min-h-screen">
+    <div className={`min-h-screen transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
       <Header />
       <Hero />
       <Services />
