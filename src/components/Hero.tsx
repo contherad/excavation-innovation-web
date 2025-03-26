@@ -55,7 +55,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative w-full h-screen overflow-hidden">
-      {/* Video Background */}
+      {/* Background Image */}
       <div 
         ref={parallaxRef}
         className="absolute inset-0 bg-black"
@@ -65,22 +65,22 @@ const Hero = () => {
         }}
       >
         <div className="absolute inset-0 overflow-hidden">
-          <video 
-            autoPlay 
-            muted 
-            loop 
-            playsInline
-            className="absolute min-w-full min-h-full object-cover"
-          >
-            <source src="https://player.vimeo.com/external/517090081.hd.mp4?s=80e097f68be548f70c9c3d5ad3381995b7767e31&profile_id=175" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          {/* High-quality excavation/construction image */}
+          <div 
+            className="absolute min-w-full min-h-full object-cover bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url('https://images.unsplash.com/photo-1504692392470-8d828a7355e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`,
+            }}
+          ></div>
           
           {/* Gradient overlay for better text visibility */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/70 to-black/90"></div>
+          
+          {/* Red accent overlay */}
+          <div className="absolute inset-0 bg-rock-red/10"></div>
           
           {/* Pattern overlay for texture */}
-          <div className="absolute inset-0 bg-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC')] opacity-15"></div>
+          <div className="absolute inset-0 bg-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC')] opacity-20"></div>
         </div>
       </div>
 
@@ -89,7 +89,7 @@ const Hero = () => {
         className={`absolute inset-0 bg-black z-10 transition-opacity duration-1000 pointer-events-none ${isLoaded ? 'opacity-0' : 'opacity-100'}`}
       >
         <div className="flex items-center justify-center h-full">
-          <Loader2 className="animate-spin h-10 w-10 text-red-600" />
+          <Loader2 className="animate-spin h-10 w-10 text-rock-red" />
         </div>
       </div>
 
@@ -113,7 +113,7 @@ const Hero = () => {
               textShadow: "0 4px 12px rgba(0,0,0,0.5)"
             }}
           >
-            Building Strong <span className="text-red-600">Foundations</span><br /> 
+            Building Strong <span className="text-rock-red">Foundations</span><br /> 
             For Utah Since 1997
           </h1>
           
@@ -134,7 +134,7 @@ const Hero = () => {
           >
             <a 
               href="#contact" 
-              className="relative overflow-hidden group rounded-md px-8 py-4 font-medium bg-red-600 text-white transition-all duration-300 hover:bg-red-700 hover:shadow-lg hover:shadow-red-600/20 w-full sm:w-auto"
+              className="relative overflow-hidden group rounded-md px-8 py-4 font-medium bg-rock-red text-white transition-all duration-300 hover:bg-rock-red/90 hover:shadow-lg hover:shadow-rock-red/20 w-full sm:w-auto"
             >
               <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full group-hover:animate-[shine_1.5s_ease]"></span>
               Request a Quote
@@ -154,15 +154,15 @@ const Hero = () => {
             style={{ transitionDelay: "1000ms" }}
           >
             <div className="bg-black/30 backdrop-blur-md border border-white/10 rounded-lg p-4 text-center">
-              <div className="text-3xl md:text-4xl font-bold text-red-600">25+</div>
+              <div className="text-3xl md:text-4xl font-bold text-rock-red">25+</div>
               <div className="text-white/80 text-sm mt-1">Years Experience</div>
             </div>
             <div className="bg-black/30 backdrop-blur-md border border-white/10 rounded-lg p-4 text-center">
-              <div className="text-3xl md:text-4xl font-bold text-red-600">500+</div>
+              <div className="text-3xl md:text-4xl font-bold text-rock-red">500+</div>
               <div className="text-white/80 text-sm mt-1">Projects Completed</div>
             </div>
             <div className="col-span-2 md:col-span-1 bg-black/30 backdrop-blur-md border border-white/10 rounded-lg p-4 text-center">
-              <div className="text-3xl md:text-4xl font-bold text-red-600">100%</div>
+              <div className="text-3xl md:text-4xl font-bold text-rock-red">100%</div>
               <div className="text-white/80 text-sm mt-1">Client Satisfaction</div>
             </div>
           </div>
